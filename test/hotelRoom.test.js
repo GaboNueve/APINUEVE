@@ -38,7 +38,7 @@ describe('Hotel Room GET API Tests', () => {
         expect(response.body.roomNumber).toBe(103);
     });
 
-    it("create a room with wrong info", async () => {
+    it("create a room with wrong info ", async () => {
         const response = await request(app)
             .post('/rooms')
             .send({ roomNumber: "number here", roomType: 123, pricePerNight: 200, isBooked: false });
