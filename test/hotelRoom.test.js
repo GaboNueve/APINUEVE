@@ -6,7 +6,7 @@ const HotelRoom = require('../models/HotelRoom'); // Import the HotelRoom model
 
 // Connect to a test database before running tests
 beforeAll(async () => {
-    const dbURI = "mongodb+srv://gabrieldechambost:gabogabo@clustergabo.hdclv.mongodb.net/?retryWrites=true&w=majority&appName=ClusterGabo";
+    const dbURI = "mongodb+srv://gabo:azerty@clustergabo.hdclv.mongodb.net/?retryWrites=true&w=majority&appName=ClusterGabo";
     await mongoose.connect(dbURI);
     await HotelRoom.deleteMany();
 });
